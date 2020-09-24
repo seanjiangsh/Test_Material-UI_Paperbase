@@ -1,26 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import AppTheme from "./MU_components/AppTheme";
+import Paperbase from "./paperbase/Paperbase";
 
-function App() {
+export default function Page() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppTheme
+      title="Paperbase theme - Material-UI"
+      description={`A page that mimics Firebase.
+        This item includes theming using the theme provider component.`}
+    >
+      <Paperbase />
+    </AppTheme>
   );
 }
-
-export default App;
